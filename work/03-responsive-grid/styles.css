@@ -140,8 +140,10 @@ p {
     grid-column: span 12;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 
     list-style: none;
 
@@ -184,5 +186,10 @@ p {
 
     .card {
         grid-column: span 4;
+    }
+
+    .buttomnav__menu {
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
