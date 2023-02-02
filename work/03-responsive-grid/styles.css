@@ -43,8 +43,6 @@ p {
 
 .topnav {
     grid-area: nav;
-
-    /*background-color: var(--header-bg-color);*/
 }
 
 .topnav__menu {
@@ -136,7 +134,6 @@ p {
 .bottomnav {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-
 }
 
 .buttomnav__menu {
@@ -147,6 +144,7 @@ p {
     justify-content: space-around;
 
     list-style: none;
+
 }
 
 .buttomnav__menu a {
