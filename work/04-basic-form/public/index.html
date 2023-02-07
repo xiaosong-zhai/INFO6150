@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic-Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="http://placekitten.com/60/60?image=4" alt="a picture of cat with 50*50 logo"/>
+        <h1 class="header__title">Join Cats Family</h1>
+        <nav class="topnav">
+            <ul>
+                <li><input type="button" value="&#9776" class="nav_button"></li>
+                <ul class="topnav__menu">
+                    <li class="topnav__item"><a href="#">Famous Cats</a></li>
+                    <li class="topnav__item"><a href="#">LOL Cats</a></li>
+                    <li class="topnav__item"><a href="#">About Us</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <form action="/submit" method="post" class="main__form">
+            <div class="form">
+                <p>* are required</p>
+                <label for="text__username"><span>UserName :</span> <span class="require">*</span></label>
+
+                <input type="text" name="name" id="text__username" required pattern="^[A-Za-z]+$"
+                                    placeholder="English string only. Case insensitive">
+
+
+                <label for="text__email"><span>Email : </span><span class="require">*</span></label>
+                <input type="email" name="email" id="text__email" required
+                       pattern="(\w{3,20}@[a-zA-Z0-9]{2,20}(\.[a-zA-Z0-0]{2,20}){1,2})"
+                       placeholder="xxx@xx.xx">
+
+                <label for="checkbox"><span>Do you want us to send you annoying emails ?</span></label>
+                <input type="checkbox" name="annoy_me" id="checkbox" checked>
+
+                <label for="dropdown"><span>VIP : </span><span class="require">*</span></span></label>
+                <select name="tier" id="dropdown" required>
+                    <option value="">Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+
+                <input type="submit" value="Register" class="register__button">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <h3>
+            We really don't care about your privacy, see our <a href="#">Privacy Policy</a>
+        </h3>
+    </footer>
+</body>
+</html>
