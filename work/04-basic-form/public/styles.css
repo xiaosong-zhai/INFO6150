@@ -1,0 +1,320 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100%;
+
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header"
+                          "main"
+                           "footer"
+                ;
+    grid-template-rows: 1fr 8fr 1fr;
+    background-color: #7ceaf8;
+}
+
+.header {
+    grid-area: header;
+
+    display: grid;
+
+    border-bottom: 2px solid black;
+}
+
+
+.header__logo {
+    align-self: center;
+    justify-self: center;
+
+    border-radius: 11px;
+}
+
+.header__title {
+    align-self: center;
+    justify-self: center;
+
+    font-weight: 400;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.topnav > ul {
+    list-style: none;
+}
+
+.nav_button {
+    width: 7rem;
+    height: 2rem;
+
+    color: #80b9f1;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+.topnav__menu{
+    position: absolute;
+    height: 0;
+    line-height: 1.6;
+
+    overflow: hidden;
+
+    list-style: none;
+}
+
+.topnav ul:hover .topnav__menu,
+.topnav ul:focus-within .topnav__menu{
+    height: auto;
+}
+.topnav__menu a {
+    display: block;
+    padding: 0 1rem;
+
+    border-radius: 10px;
+
+}
+
+.topnav__menu a:hover {
+    background-color: #00CCFF;
+}
+
+.form {
+    display: grid;
+
+    grid-template-rows: repeat(10,1fr);
+    flex-direction: row;
+    align-content: space-evenly;
+
+    align-items:center;
+    justify-items: center;
+}
+
+.form p {
+
+    justify-self: center;
+    align-self:center;
+
+    font-size: 0.5rem;
+    color: red;
+}
+
+.form label {
+    align-self: center;
+    justify-self: center;
+
+    font-size: 1.5rem;
+}
+
+.form .require {
+    color: red;
+}
+
+
+.form input {
+    align-self: center;
+    justify-self: center;
+
+    width: 20rem;
+    height: 3rem;
+}
+
+.form select {
+    align-self: center;
+    justify-self: center;
+
+    width: 20rem;
+    height: 3rem;
+}
+
+.form .register__button {
+    align-self: center;
+    justify-self: center;
+
+    width: 20rem;
+    height: 4rem;
+}
+
+
+.footer {
+    grid-area: footer;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    border-top: 2px solid black;
+
+}
+
+.footer h3 {
+    grid-column: span 3;
+    align-self: center;
+    justify-self: center;
+
+    font-weight: 400;
+}
+
+.footer a {
+
+    border-radius: 10px;
+
+}
+
+@media screen and (min-width: 50rem){
+    body {
+        display: grid;
+        grid-template-areas: "header header header"
+                          "main main main"
+                           "footer footer footer"
+                            ;
+        grid-template-rows: 1fr 8fr 1fr;
+        grid-template-columns: auto auto auto;
+    }
+
+    .header {
+        display: grid;
+
+        grid-template-columns: 2fr 6fr 2fr;
+    }
+
+    .topnav {
+        display: flex;
+
+        align-items: center;
+    }
+
+    .topnav > ul {
+        list-style: none;
+    }
+
+    .topnav__menu{
+        grid-area: header;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
+
+        position: relative;
+        height: auto;
+
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .topnav__item {
+        list-style: none;
+
+    }
+
+    .nav_button {
+        display: none;
+    }
+
+    .main {
+        grid-area: main;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .main__form {
+        margin-top: 1rem;
+
+        width: 800px;
+        height: 500px;
+
+        display: grid;
+
+        border-radius: 20px;
+
+        overflow: hidden;
+
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6,1fr);
+
+        flex-direction: column;
+        align-items:start;
+        justify-items: center;
+    }
+
+    .form p {
+        grid-column: span 2;
+
+        justify-self: center;
+        align-self:center;
+
+        font-size: 0.5rem;
+        color: red;
+    }
+
+    .form label {
+        margin-right: 1rem;
+
+        align-self: center;
+        justify-self: end;
+
+        font-size: 1.1rem;
+    }
+
+    .form .require {
+        color: red;
+    }
+
+
+    .form input {
+        margin-left: 1rem;
+
+        align-self: center;
+        justify-self: start;
+
+        width: 20rem;
+        height: 2rem;
+    }
+
+    .form select {
+        margin-left: 1rem;
+
+        align-self: center;
+        justify-self: start;
+
+        width: 20rem;
+        height: 2rem;
+    }
+
+    .form .register__button {
+        grid-column: span 2;
+
+        align-self: center;
+        justify-self: center;
+
+        width: 20rem;
+        height: 3rem;
+    }
+    .footer {
+        grid-column: span 3;
+    }
+
+    .footer h3 {
+        justify-self: center;
+        align-self: center;
+    }
+}
