@@ -1,0 +1,53 @@
+.main {
+    grid-area: main;
+
+    line-height: 2.5;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    justify-items: center;
+
+    margin-top: 2rem;
+}
+
+.box_left {
+    grid-column: span 12;
+
+}
+
+.box_left img {
+    transition: all 0.5s;
+
+}
+
+.box_left img:hover {
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+.box_right {
+    grid-column: span 12;
+
+    justify-self: left;
+}
+
+.box_right p {
+    text-indent: 2rem;
+
+    color: white;
+}
+
+@media screen and (min-width: 50rem){
+    .box_left {
+        grid-column: span 6;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .box_right {
+        grid-column: span 6;
+    }
+}
