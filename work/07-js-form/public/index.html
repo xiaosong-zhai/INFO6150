@@ -14,8 +14,9 @@
 
     <main class="main">
         <form action="/register" method="post" class="main__form">
+            <div class="register__note">* are required</div>
             <div class="register__name register-name">
-                <label for="name">Name: </label>
+                <label for="name">Name<span class="register-name__required"> *</span> : </label>
                 <span class="register-name__error">
                     This filed is required
                 </span>
@@ -23,14 +24,14 @@
             </div>
 
             <div class="register__email register-email">
-                <label for="email">Email: </label>
+                <label for="email">Email<span class="register-email__required"> *</span> : </label>
                 <span class="register-email__error">
                 </span>
                 <input name="Email" class="register-email__input" id="email" type="text">
             </div>
 
             <div class="register__confirm register-confirm">
-                <label for="confirm">Confirm Email: </label>
+                <label for="confirm">Confirm Email<span class="register-confirm__required"> *</span> : </label>
                 <span class="register-confirm__error">
                 </span>
                 <input name="Confirm Email" class="register-confirm__input" id="confirm" type="text">

@@ -52,6 +52,14 @@ body {
     justify-items: center;
 }
 
+.register__note,
+.register-name__required,
+.register-email__required,
+.register-confirm__required {
+    color: red;
+}
+
+
 .register-name,
 .register-email,
 .register-confirm,
