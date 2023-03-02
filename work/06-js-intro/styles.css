@@ -1,0 +1,480 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100%;
+
+    background-image: linear-gradient(to top, #0a0a0a, #232834, #2d495e, #266e87, #0396a8, #0396a8, #0396a8,
+    #0396a8, #266e87, #2d495e, #232834, #0a0a0a);
+
+}
+
+:root {
+    --ahover-color: #dc2e2e;
+    --card-color: #5FFBF1;
+    --header-bg-color: #0A0A0A;
+    --footerer-bg-color: #0A0A0A;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header"
+                          "main"
+                           "footer"
+;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border-bottom: 2px solid black;
+}
+
+.header a {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo img {
+    border-radius: 40%;
+}
+
+.header__title {
+    margin-left: 1rem;
+}
+
+.topnav {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.nav_button {
+    width: 7rem;
+    height: 2rem;
+
+    color: #80b9f1;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+.topnav__menu {
+    position: relative;
+
+    transform: rotateX(0deg);
+    transition: transform 2s;
+
+    line-height: 1.6;
+
+    list-style: none;
+}
+
+.open {
+    transform: rotateX(90deg);
+}
+
+
+.topnav__menu a {
+    display: block;
+    padding: 0 1rem;
+
+    border-radius: 10px;
+
+}
+
+.main {
+    grid-area: main;
+
+    line-height: 2.6;
+}
+
+.main h2 {
+    text-align: center;
+
+    font-weight: 400;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+
+    justify-items: center;
+}
+
+.card1 {
+    grid-column: span 12;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+
+    max-width: 18rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),url("card1.png");
+}
+
+.card2 {
+    grid-column: span 12;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+
+    max-width: 18rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),url("card2.png");
+}
+.card3 {
+    grid-column: span 12;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+
+    max-width: 18rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),url("card3.png");
+}
+
+.card1__content {
+    transition: all 0.5s ease;
+    transform: translateY(100%);
+}
+
+.card1:hover .card1__content {
+    transform: translateY(0);
+}
+
+
+.card2__content {
+    transition: all 0.5s ease;
+    transform: translateY(100%);
+}
+
+.card2:hover .card2__content {
+    transform: translateY(0);
+}
+
+.card3__content {
+    transition: all 0.5s ease;
+    transform: translateY(100%);
+}
+
+.card3:hover .card3__content {
+    transform: translateY(0);
+}
+
+.card__text {
+    color: #ffffff;
+    font-weight: 900;
+
+}
+
+.card__link {
+    padding: 0.5rem;
+
+    font: inherit;
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    font-weight: 400;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #00fff9;
+}
+
+a:hover {
+    color: var(--ahover-color);
+}
+
+.footer {
+    grid-area: footer;
+
+    border-top: 2px solid black;
+
+}
+
+.footer h3 {
+    margin: 1rem 2rem;
+    font-weight: 400;
+}
+
+/*below CSS adapted from https://css.gg under the MIT License*/
+.gg-home-screen {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 14px;
+    height: 22px;
+    border-radius: 3px;
+    border: 2px solid
+}
+
+.gg-home-screen::after,
+.gg-home-screen::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 2px;
+    height: 2px;
+    left: 1px;
+    background: currentColor
+}
+
+.gg-home-screen::after {
+    top: 1px;
+    box-shadow:
+            3px 0,6px 0,0 3px,
+            3px 3px,6px 3px,0 6px
+}
+
+.gg-home-screen::before {
+    bottom: 1px;
+    box-shadow: 3px 0 0,6px 0 0
+}
+
+/*below CSS adapted from https://css.gg under the MIT License*/
+.gg-notes {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 3px
+}
+
+.gg-notes::after,
+.gg-notes::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    height: 2px;
+    background: currentColor;
+    left: 2px
+}
+
+.gg-notes::before {
+    box-shadow:
+            0 4px 0,
+            0 8px 0;
+    width: 12px;
+    top: 2px
+}
+
+.gg-notes::after {
+    width: 6px;
+    top: 14px
+}
+
+/*below CSS adapted from https://css.gg under the MIT License*/
+.gg-user-add {
+    display: block;
+    transform: scale(1.1);
+    box-sizing: border-box;
+    width: 20px;
+    height: 18px;
+    background:
+            linear-gradient(
+                    to left,
+                    currentColor 8px,
+                    transparent 0)
+            no-repeat 14px 6px/6px 2px,
+            linear-gradient(
+                    to left,
+                    currentColor 8px,
+                    transparent 0)
+            no-repeat 16px 4px/2px 6px
+}
+
+.gg-user-add::after,.gg-user-add::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border: 2px solid
+}
+
+.gg-user-add::before {
+    width: 8px;
+    height: 8px;
+    border-radius: 30px;
+    top: 0;
+    left: 2px
+}
+
+.gg-user-add::after {
+    width: 12px;
+    height: 9px;
+    border-bottom: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    top: 9px
+}
+
+@media screen and (min-width: 60rem){
+    body {
+        display: grid;
+        grid-template-areas: "header header header"
+                          "main main main"
+                           "footer footer footer"
+    ;
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .header {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        border-bottom: 2px solid black;
+    }
+
+    .header a {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .header__logo {
+        margin-left: 5rem;
+
+
+        display: flex;
+        justify-content: start;
+    }
+
+    .header__logo img {
+        border-radius: 40%;
+    }
+
+    .header__title {
+        margin-left: 5rem;
+    }
+
+    .topnav {
+        margin-top: 1rem;
+        display: flex;
+
+        align-items: center;
+    }
+
+    .topnav__menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
+
+        justify-items: center;
+        justify-content: space-around;
+        align-items: center;
+
+        transform: rotateX(0deg);
+
+        height: auto;
+    }
+
+    .open {
+        transform: rotateX(90deg);
+    }
+
+    .topnav__menu a {
+        display: block;
+
+        height: 2rem;
+        line-height: 2rem;
+        padding:0 4rem;
+
+        border-radius: 10px;
+
+        text-decoration: none;
+
+        transform: translateY(-1rem);
+    }
+
+    .nav_button {
+        transform: translate(-5.5rem,1rem)
+    }
+
+    .card1 {
+        grid-column: span 4;
+    }
+
+    .card2 {
+        grid-column: span 4;
+    }
+
+    .card3 {
+        grid-column: span 4;
+    }
+
+    .footer {
+        grid-area: footer;
+
+        border-top: 2px solid black;
+
+    }
+
+    .footer h3 {
+        margin-left: 5rem;
+
+        font-weight: 400;
+    }
+
+}
