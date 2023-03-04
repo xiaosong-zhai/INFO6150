@@ -1,0 +1,187 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100%;
+
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header"
+                          "main"
+                           "footer"
+                ;
+    grid-template-rows: 1fr 10fr 1fr;
+    background-color: #7ceaf8;
+}
+
+.header {
+    grid-area: header;
+
+    display: grid;
+
+    border-bottom: 2px solid black;
+
+    background-color: #00C59E;
+}
+
+.header__title {
+    align-self: center;
+    justify-self: center;
+
+    font-weight: 400;
+}
+
+.main__form {
+    display: grid;
+    gap: 1rem;
+
+    width: 400px;
+    margin: 0 auto;
+
+    flex-direction: row;
+    align-content: space-evenly;
+
+    align-items:center;
+    justify-items: center;
+}
+
+.register__note,
+.register-name__required,
+.register-email__required,
+.register-confirm__required {
+    color: red;
+}
+
+
+.register-name,
+.register-email,
+.register-confirm,
+.register-dropdown {
+    display: grid;
+}
+
+.register-name__error {
+    display: none;
+    color: red;
+}
+
+.register-name__invalid .register-name__error {
+    display: initial;
+}
+
+.register-email__error,
+.register-confirm__error {
+    color: red;
+}
+
+.main__form label {
+    align-self: center;
+    justify-self: center;
+
+    font-size: 1.5rem;
+}
+
+.main__form input {
+    align-self: center;
+    justify-self: center;
+
+    width: 20rem;
+    height: 2.1rem;
+}
+
+.main__form select {
+    align-self: center;
+    justify-self: center;
+
+    width: 20rem;
+    height: 2rem;
+}
+
+.main__form .register__button {
+    align-self: center;
+    justify-self: center;
+
+    width: 20rem;
+    height: 2.5rem;
+}
+
+
+.footer {
+    grid-area: footer;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    border-top: 2px solid black;
+
+    background-color: #00C59E;
+}
+
+.footer h3 {
+    grid-column: span 3;
+    align-self: center;
+    justify-self: center;
+
+    font-weight: 400;
+}
+
+.footer a {
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 40rem){
+    .main__form {
+        display: grid;
+
+        width: 1000px;
+        height: 80%;
+    }
+
+    .register-name,
+    .register-email,
+    .register-confirm,
+    .register-dropdown {
+        display: initial;
+    }
+
+    .register-confirm {
+        transform: translateX(-3rem);
+    }
+
+    .register-checkbox {
+        transform: translateX(-5rem);
+    }
+
+    .main__form label {
+        margin-right: 1rem;
+
+        align-self: center;
+        justify-self: end;
+
+        text-align-last: end;
+    }
+
+    .main__form input {
+        margin-left: 1rem;
+
+        align-self: center;
+        justify-self: start;
+    }
+
+    .main__form select {
+        margin-left: 1rem;
+
+        align-self: center;
+        justify-self: start;
+    }
+}
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="validation.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Welcome to register</h1>
+    </header>
+
+    <main class="main">
+        <form action="/register" method="post" class="main__form">
+            <div class="register__note">* are required</div>
+            <div class="register__name register-name">
+                <label for="name">Name<span class="register-name__required"> *</span> : </label>
+                <span class="register-name__error">
+                    This filed is required
+                </span>
+                <input name="Name" class="register-name__input" id="name" type="text">
+            </div>
+
+            <div class="register__email register-email">
+                <label for="email">Email<span class="register-email__required"> *</span> : </label>
+                <span class="register-email__error">
+                </span>
+                <input name="Email" class="register-email__input" id="email" type="text">
+            </div>
+
+            <div class="register__confirm register-confirm">
+                <label for="confirm">Confirm Email<span class="register-confirm__required"> *</span> : </label>
+                <span class="register-confirm__error">
+                </span>
+                <input name="Confirm Email" class="register-confirm__input" id="confirm" type="text">
+            </div>
+
+            <div class="register__checkbox register-checkbox">
+                <label for="checkbox">Do you wish to revive notification ?</label>
+                <input type="checkbox" name="wants-spam" id="checkbox" checked>
+            </div>
+
+            <div class="register__dropdown register-dropdown">
+                <label for="dropdown"><span>VIP : </span> </label>
+                <select name="tier" id="dropdown" >
+                    <option value="">Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+            </div>
+
+                <input type="submit" value="Register" class="register__button">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <h3>
+            We really don't care about your privacy, see our <a href="#">Privacy Policy</a>
+        </h3>
+    </footer>
+</body>
+</html>
+
+
