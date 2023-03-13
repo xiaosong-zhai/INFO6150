@@ -1,0 +1,91 @@
+.main {
+    grid-area: main;
+
+    line-height: 1.6;
+}
+
+.main__events {
+    width: 80%;
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+.events__heading {
+    text-align: center;
+}
+
+.event1__detail,
+.event2__detail,
+.event3__detail {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 2rem;
+
+    color: unset;
+
+    text-decoration: none;
+}
+
+.event1__detail li,
+.event2__detail li,
+.event3__detail li {
+    border: 1px solid #ccc;
+    box-shadow: 12px 6px 12px rgb(0 0 0 / 60%);
+
+    color: unset;
+
+    text-decoration: none;
+}
+
+.event1__detail:hover,
+.event2__detail:hover,
+.event3__detail:hover {
+    background-color: unset;
+}
+
+.event-location {
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.event1__detail img,
+.event2__detail img,
+.event3__detail img {
+    float: right;
+
+    width: 125px;
+    height: 125px;
+}
+
+.events__detail h3 {
+    text-align: center;
+}
+
+@media screen and (min-width: 44rem){
+    .event1__detail,
+    .event2__detail,
+    .event3__detail {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding: 2rem;
+
+        border: 1px solid #ccc;
+        box-shadow: 12px 6px 12px rgb(0 0 0 / 60%);
+
+        color: unset;
+
+        text-decoration: none;
+    }
+
+    .event1__detail li,
+    .event2__detail li,
+    .event3__detail li {
+        border: none;
+        box-shadow: none;
+
+        color: unset;
+
+        text-decoration: none;
+    }
+}
