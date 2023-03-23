@@ -1,0 +1,156 @@
+.main {
+    grid-area: main;
+
+    line-height: 1.6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    justify-items: center;
+}
+
+.card {
+    grid-column: span 12;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0.5rem;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    background-color: #eee;
+}
+
+.card h3 {
+    padding: 0.5rem;
+    font-weight: 400;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+}
+
+.card__link,
+.card__link2,
+.card__link3,
+.card__link4,
+.card__link5,
+.card__link6 {
+    display: inline;
+}
+
+.card a {
+    padding: 0.5rem;
+}
+
+.card a:hover {
+    background-color: unset;
+}
+
+.modal,
+.modal2,
+.modal3,
+.modal4,
+.modal5,
+.modal6 {
+    width: 30%;
+    height: 45%;
+
+    margin: auto auto;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.register__form {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-content: center;
+}
+
+.modal__heading {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.main__form {
+    display: grid;
+    gap: 2rem;
+
+    width: 80%;
+    margin: auto auto;
+
+}
+
+label {
+    line-height: 1.6;
+
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.register__buttons {
+
+}
+
+.register-email__required,
+.register-confirm__required {
+    color: red;
+}
+
+.register-email,
+.register-confirm {
+    display: grid;
+}
+
+.register-email__error,
+.register-confirm__error {
+    color: red;
+}
+
+button {
+    width: 8rem;
+
+    border-radius: 20px;
+
+    font-size: 1.2rem;
+}
+
+.subscribe {
+    background-color: lime;
+}
+
+.close,
+.close2,
+.close3,
+.close4,
+.close5,
+.close6 {
+    background-color: lightcoral;
+}
+
+@media screen and (min-width: 44rem) {
+    .cards {
+        gap: 1rem;
+    }
+
+    .card {
+        grid-column: span 4;
+    }
+
+    .register__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

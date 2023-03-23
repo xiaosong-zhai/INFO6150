@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="cats-styles.css">
+    <script defer src="basic.js"></script>
+    <script defer src="validation.js"></script>
+</head>
+<body>
+    <a href="#maincontent" class="skiptomaincontent" aria-label="tap here to the top main content">skip to main content</a>
+<header class="header">
+    <div class="header__logo">
+        <a class="header__logo--link" href="index.html">
+            <img src="http://placekitten.com/100/100" alt="a logo picture of a cat with 100*100"/>
+        </a>
+    </div>
+
+    <div class="header__title">
+        <h1>Famous cats ruled the world </h1>
+    </div>
+
+    <nav class="topnav">
+        <div class="nav__menu">
+            <button class="nav__button" aria-expanded="false" type="button"></button>
+        </div>
+
+        <ul class="topnav__menu">
+            <li class="topnav__item"><a href="index.html" aria-label="tap here to homepage">Home</a></li>
+            <li class="topnav__item"><a href="cats.html" aria-label="tap here to learn more famous cats">Famous Cats</a></li>
+            <li class="topnav__item"><a href="events.html" aria-label="tap here to learn Cat Events">Cat Events</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="cards" id="maincontent">
+
+        <div class="card">
+            <h2 class="card__title">American Shorthair</h2>
+            <img class="card__pic" src="card1.jpg" alt="a picture of American Shorthair cat with 200*200"/>
+            <h3 class="cards__text">The American Shorthair (ASH) is a breed of domestic cat believed to be descended from European cats brought to North America by early settlers to protect valuable cargo from mice and rats.</h3>
+            <h4 class="card1__h4"> Click<a class="card__link" href="#">subscribe</a>American Shorthair</h4>
+            <dialog class="modal">
+                <div class="register__form">
+                <h2 class="modal__heading">Subscribe American Shorthair cat</h2>
+                <form action="/subscribe" method="post" class="main__form">
+                    <div class="register__email register-email">
+                        <label for="email">Email<span class="register-email__required"> *(required)</span> : </label>
+                        <span class="register-email__error">
+                        </span>
+                        <input name="Email" class="register-email__input" id="email" type="text">
+                    </div>
+
+                    <div class="register__confirm register-confirm">
+                        <label for="confirm">Confirm Email<span class="register-confirm__required"> *(required)</span> : </label>
+                        <span class="register-confirm__error">
+                        </span>
+                        <input name="Confirm Email" class="register-confirm__input" id="confirm" type="text">
+                    </div>
+
+                    <div class="register__buttons">
+                        <button class="subscribe" type="submit">Subscribe</button>
+                        <button class="close" type="button">Close</button>
+                    </div>
+                </form>
+                </div>
+            </dialog>
+        </div>
+
+        <div class="card">
+            <h2 class="card__title">British Shorthair</h2>
+            <img class="card__pic" src="card2.jpg" alt="a picture of British Shorthair cat with 200*200"/>
+            <h3 class="card__text">The British Shorthair is the pedigreed version of the traditional British domestic cat, with a distinctively stocky body, dense coat, and broad face.</h3>
+            <h4 class="card2__h4"> Click<a class="card__link2" href="#">subscribe</a>British Shorthair</h4>
+            <dialog class="modal2">
+                <div class="register__form">
+                    <h2 class="modal__heading">Subscribe British Shorthair cat</h2>
+                    <form action="/subscribe" method="post" class="main__form">
+                        <div class="register__email register-email">
+                            <label for="email2">Email<span class="register-email__required"> *(required)</span> : </label>
+                            <span class="register-email__error">
+                            </span>
+                            <input name="Email" class="register-email__input" id="email2" type="text">
+                        </div>
+
+                        <div class="register__confirm register-confirm">
+                            <label for="confirm2">Confirm Email<span class="register-confirm__required"> *(required)</span> : </label>
+                            <span class="register-confirm__error">
+                        </span>
+                            <input name="Confirm Email" class="register-confirm__input" id="confirm2" type="text">
+                        </div>
+
+                        <div class="register__buttons">
+                            <button class="subscribe" type="submit">Subscribe</button>
+                            <button class="close2" type="button">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </dialog>
+        </div>
+
+        <div class="card">
+            <h2 class="card__title">Ragdoll</h2>
+            <img class="card__pic" src="card3.jpg" alt="a picture of Ragdoll cat with 200*200"/>
+            <h3 class="card__text">The Ragdoll is a breed of cat with a distinct color coat and blue eyes. Its morphology is large and weighty, and it has a semi-long and silky soft coat. American breeder Ann Baker developed Ragdolls in the 1960s.</h3>
+            <h4 class="card3__h4"> Click<a class="card__link3" href="#">subscribe</a>Ragdoll</h4>
+            <dialog class="modal3">
+                <div class="register__form">
+                    <h2 class="modal__heading">Subscribe Ragdoll cat</h2>
+                    <form action="/subscribe" method="post" class="main__form">
+                        <div class="register__email register-email">
+                            <label for="email3">Email<span class="register-email__required"> *(required)</span> : </label>
+                            <span class="register-email__error">
+                            </span>
+                            <input name="Email" class="register-email__input" id="email3" type="text">
+                        </div>
+
+                        <div class="register__confirm register-confirm">
+                            <label for="confirm3">Confirm Email<span class="register-confirm__required"> *(required)</span> : </label>
+                            <span class="register-confirm__error">
+                        </span>
+                            <input name="Confirm Email" class="register-confirm__input" id="confirm3" type="text">
+                        </div>
+
+                        <div class="register__buttons">
+                            <button class="subscribe" type="submit">Subscribe</button>
+                            <button class="close3" type="button">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </dialog>
+        </div>
+
+        <div class="card">
+            <h2 class="card__title">Siamese</h2>
+            <img class="card__pic" src="card4.jpg" alt="a picture of Siamese cat with 200*200"/>
+            <h3 class="card__text">The Siamese cat (Thai: แมวไทย, Maeo Thai; แมวสยาม, Maeo Seeaam) is one of the first distinctly recognized breeds of Asian cat. Derived from the Wichianmat landrace, one of several varieties of cat native to Thailand (formerly known as Siam), the original Siamese became one of the most popular breeds in Europe and North America in the 19th century.</h3>
+            <h4 class="card4__h4"> Click<a class="card__link4" href="#">subscribe</a>Siamese</h4>
+            <dialog class="modal4">
+                <div class="register__form">
+                    <h2 class="modal__heading">Subscribe Siamese cat</h2>
+                    <form action="/subscribe" method="post" class="main__form">
+                        <div class="register__email register-email">
+                            <label for="email4">Email<span class="register-email__required"> *(required)</span> : </label>
+                            <span class="register-email__error">
+                            </span>
+                            <input name="Email" class="register-email__input" id="email4" type="text">
+                        </div>
+
+                        <div class="register__confirm register-confirm">
+                            <label for="confirm4">Confirm Email<span class="register-confirm__required"> *(required)</span> : </label>
+                            <span class="register-confirm__error">
+                        </span>
+                            <input name="Confirm Email" class="register-confirm__input" id="confirm4" type="text">
+                        </div>
+
+                        <div class="register__buttons">
+                            <button class="subscribe" type="submit">Subscribe</button>
+                            <button class="close4" type="button">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </dialog>
+        </div>
+
+        <div class="card">
+            <h2 class="card__title">Birman</h2>
+            <img class="card__pic" src="card5.jpg" alt="a picture of Birman cat with 200*200"/>
+            <h3 class="card__text">The Birman, also called the "Sacred Cat of Burma" is a domestic cat breed. The Birman is a long-haired, colour-pointed cat distinguished by a silky coat, deep blue eyes, and contrasting white "gloves" on each paw.</h3>
+            <h4 class="card5__h4"> Click<a class="card__link5" href="#">subscribe</a>Birman</h4>
+            <dialog class="modal5">
+                <div class="register__form">
+                    <h2 class="modal__heading">Subscribe Siamese cat</h2>
+                    <form action="/subscribe" method="post" class="main__form">
+                        <div class="register__email register-email">
+                            <label for="email5">Email<span class="register-email__required"> *(required)</span> : </label>
+                            <span class="register-email__error">
+                            </span>
+                            <input name="Email" class="register-email__input" id="email5" type="text">
+                        </div>
+
+                        <div class="register__confirm register-confirm">
+                            <label for="confirm5">Confirm Email<span class="register-confirm__required"> *(required)</span> : </label>
+                            <span class="register-confirm__error">
+                        </span>
+                            <input name="Confirm Email" class="register-confirm__input" id="confirm5" type="text">
+                        </div>
+
+                        <div class="register__buttons">
+                            <button class="subscribe" type="submit">Subscribe</button>
+                            <button class="close5" type="button">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </dialog>
+        </div>
+
+        <div class="card">
+            <h2 class="card__title">Persian</h2>
+            <img class="card__pic" src="card6.jpg" alt="a picture of Persian cat with 200*200"/>
+            <h3 class="card__text">The Persian cat (Persian: گربه پارسی, romanized: Gorbe'-ye Pârsi), also known as the Persian longhair, is a long-haired breed of cat characterized by a round face and short muzzle. The first documented ancestors of Persian cats were imported into Italy from Persia around 1620. Widely recognized by cat fancy since the late 19th century, Persian cats were first adopted by the British, and later by American breeders after World War II.</h3>
+            <h4 class="card6__h4"> Click<a class="card__link6" href="#">subscribe</a>Persian</h4>
+            <dialog class="modal6">
+                <div class="register__form">
+                    <h2 class="modal__heading">Subscribe Siamese cat</h2>
+                    <form action="/subscribe" method="post" class="main__form">
+                        <div class="register__email register-email">
+                            <label for="email6">Email<span class="register-email__required"> *(required)</span> : </label>
+                            <span class="register-email__error">
+                            </span>
+                            <input name="Email" class="register-email__input" id="email6" type="text">
+                        </div>
+
+                        <div class="register__confirm register-confirm">
+                            <label for="confirm6">Confirm Email<span class="register-confirm__required"> *(required)</span> : </label>
+                            <span class="register-confirm__error">
+                        </span>
+                            <input name="Confirm Email" class="register-confirm__input" id="confirm6" type="text">
+                        </div>
+
+                        <div class="register__buttons">
+                            <button class="subscribe" type="submit">Subscribe</button>
+                            <button class="close6" type="button">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </dialog>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <nav class="bottomnav">
+        <ul class="buttomnav__menu">
+            <li class="buttomnav__item"><a href="#">Privacy Policy</a></li>
+            <li class="buttomnav__item"><a href="#">Join Us</a></li>
+            <li class="buttomnav__item"><a href="#">Contact US</a></li>
+            <li class="buttomnav__item"><a href="#">Social Media</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>
