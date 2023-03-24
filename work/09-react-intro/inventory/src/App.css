@@ -1,0 +1,58 @@
+.app {
+    display: flex;
+
+    text-align: center;
+}
+
+.app__addbutton {
+    margin-left: 3rem;
+    width: 3rem;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 2rem;
+}
+
+.app__minbutton {
+    margin-left: 3rem;
+    width: 3rem;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 2rem;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.reorder {
+    margin-left: 3rem;
+    display: flex;
+
+    animation: showReorder 2s;
+
+}
+
+.reorder__title {
+    color: #9a0f0f;
+}
+
+.reorder__button {
+    margin-left: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+@keyframes showReorder {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
