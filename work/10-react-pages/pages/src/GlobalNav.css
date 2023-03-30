@@ -1,0 +1,44 @@
+.global-nav {
+    grid-area: header-nav;
+
+    grid-column: span 2;
+}
+
+.global-nav__list {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+
+    list-style: none;
+}
+
+.global-nav__list--open {
+    display: flex;
+}
+
+.global-nav__button {
+    height: 2rem;
+    cursor: pointer;
+}
+
+.global-nav__link {
+    display: inline-block;
+
+    padding: 0.5rem 1rem;
+}
+
+.global-nav__link:hover {
+    background-color: var(--bg-hover-color);
+
+    color: black;
+}
+
+@media screen and (min-width: 44rem){
+    .global-nav__button {
+        display: none;
+    }
+
+    .global-nav__list {
+        display: flex;
+    }
+}

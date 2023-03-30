@@ -1,0 +1,28 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: papayawhip;
+    --bg-header-color: burlywood;
+    --bg-footer-color: burlywood;
+    --bg-hover-color: #C0FFEE;
+    --bg--card-color: #b5eaf8;
+    --bg--card-link--color: #79ccff;
+    --bg--panel-color: #eee;
+
+}
+
+body,html {
+    height: 100%;
+
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+}
+
+#root {
+    height: 100%;
+}
