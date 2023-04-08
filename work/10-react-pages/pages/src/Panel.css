@@ -1,0 +1,46 @@
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.box img {
+    width: 125px;
+    height: 125px;
+}
+
+.box__top {
+    border: 1px solid black;
+    height: 100%;
+
+    background-color: var(--bg--panel-color);
+}
+
+.box__top--image {
+    float: right;
+}
+
+@media screen and (min-width: 44rem) {
+    .box img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box__top {
+        margin: 1rem;
+        height: 70%;
+    }
+
+    .box__top--image {
+        margin: 0.5rem;
+
+        float: right;
+    }
+
+    .box__top--content {
+        margin: 0.5rem;
+    }
+}

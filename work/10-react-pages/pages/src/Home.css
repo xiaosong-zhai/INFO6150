@@ -1,0 +1,40 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+
+    justify-items: center;
+}
+
+.card {
+    grid-column: span 12;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 18rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    background-color: var(--bg--card-color);
+}
+
+.card__link {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background-color: var(--bg--card-link--color);
+
+    font: inherit;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 44rem){
+    .card {
+        grid-column: span 4;
+    }
+}
