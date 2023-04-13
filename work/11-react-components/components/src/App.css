@@ -1,0 +1,12 @@
+.button-link {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.app {
+    display: flex;
+    justify-content: space-around;
+}
