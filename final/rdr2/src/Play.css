@@ -1,0 +1,125 @@
+.main__form {
+    display: grid;
+    gap: 1rem;
+
+    width: 400px;
+    margin: 0 auto;
+
+    flex-direction: row;
+    align-content: space-evenly;
+
+    align-items:center;
+    justify-items: center;
+}
+
+.register__note,
+.register-name__required,
+.register-dropdown__required
+ {
+    color: red;
+}
+
+
+.register-name,
+.register-dropdown {
+    display: grid;
+}
+
+.register-name__error {
+    display: none;
+    color: red;
+}
+
+.register-name__invalid .register-name__error {
+    display: initial;
+}
+
+.main__form label {
+    align-self: center;
+    justify-self: center;
+
+    font-size: 1.5rem;
+}
+
+.main__form input {
+    align-self: center;
+    justify-self: center;
+
+    width: 20rem;
+    height: 2.1rem;
+}
+
+.main__form select {
+    align-self: center;
+    justify-self: center;
+
+    width: 20rem;
+    height: 2rem;
+}
+
+.main__form .register__button {
+    align-self: center;
+    justify-self: center;
+
+    width: 20rem;
+    height: 2.5rem;
+}
+
+.dialog {
+    margin: auto auto;
+}
+
+.dialog-title {
+    text-align: center;
+}
+
+.dialog-close {
+    width: 4rem;
+    height: 1.5rem;
+}
+
+@media screen and (min-width: 55rem){
+    .main__form {
+        display: grid;
+
+        width: 1000px;
+        height: 80%;
+    }
+
+    .register-name,
+    .register-dropdown {
+        display: initial;
+    }
+
+
+    .main__form label {
+        margin-right: 1rem;
+
+        align-self: center;
+        justify-self: end;
+
+        text-align-last: end;
+    }
+
+    .main__form input {
+        margin-left: 1rem;
+
+        align-self: center;
+        justify-self: start;
+    }
+
+    .register-dropdown {
+        margin-left: 2.7rem;
+    }
+
+    .register__dropdown--hardware {
+        margin-left: 1.9rem;
+    }
+
+    .main__form select {
+        margin-left: 1rem;
+
+        align-self: center;
+        justify-self: start;
+    }
+}

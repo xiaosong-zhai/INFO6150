@@ -1,0 +1,30 @@
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+                        "header-logo header-title"
+                        "header-nav header-nav"
+                        ;
+
+    border-bottom: 1px solid black;
+}
+
+.header__logo {
+    grid-area: header-logo;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+}
+
+.header__title {
+    grid-area: header-title;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.header__nav {
+    grid-area: header-nav;
+}

@@ -1,0 +1,30 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-hover-color: #dc2e2e;
+    --bg--card-color: #b5eaf8;
+    --bg--card-link--color: #79ccff;
+    --bg--panel-color: #eee;
+
+}
+
+body,html {
+    height: 100%;
+
+    font-family: sans-serif;
+}
+
+#root {
+    height: 100%;
+}
+
+@media screen and (min-width: 55rem) {
+    body,html {
+        height: 100%;
+    }
+}

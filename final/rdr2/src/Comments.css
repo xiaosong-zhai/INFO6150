@@ -1,0 +1,42 @@
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.box__panel {
+    border: 1px solid black;
+}
+
+.box__panel img {
+    width: 125px;
+    height: 125px;
+}
+
+.box__panel--image {
+    float: right;
+}
+
+@media screen and (min-width: 55rem) {
+    .box img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box__panel {
+        margin: 1rem;
+    }
+
+    .box__panel--image {
+        margin: 0.5rem;
+
+        float: right;
+    }
+
+    .box__panel--content {
+        margin: 0.5rem;
+    }
+}

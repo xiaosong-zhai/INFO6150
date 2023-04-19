@@ -1,0 +1,6 @@
+.dark-mode {
+    min-height: 100vh;
+
+    background-image: linear-gradient(to bottom, #bcbcbc, #989898, #767676, #565656, #373737, #373737, #373737, #373737, #565656, #767676, #989898, #bcbcbc);
+    color: #fff;
+}

@@ -1,0 +1,18 @@
+.app {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #35e8b2, #00e6d0, #00e3e7, #1cddf7, #5ad7ff, #5ad7ff, #5ad7ff, #5ad7ff, #1cddf7, #00e3e7, #00e6d0, #35e8b2);
+}
+
+.skiptomaincontent {
+    position: absolute;
+    top: -115px;
+    left: -155px;
+}
+
+.skiptomaincontent:focus {
+    top: -115px;
+    left: 3rem;
+}
